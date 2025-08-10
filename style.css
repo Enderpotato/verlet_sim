@@ -1,0 +1,115 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    width: 100%;
+    display: block;
+    cursor: none;
+}
+
+nav {
+    padding: 10px;
+    margin: 0;
+    background-color: chocolate;
+}
+
+#top-title {
+    font-size: large;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 10%;
+}
+
+#main-block {
+    display: grid;
+    grid-template-areas: "csImg csImg op op op op" "csImg csImg op op op op" "csImg csImg op op op op" "dev   dev   . . . .";
+    grid-gap: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#canvasImg {
+    display: inline;
+    margin: 0;
+    grid-area: csImg;
+    padding: 0;
+    background-color: brown;
+}
+
+#dev-info {
+    display: flex;
+    flex-direction: row;
+    grid-area: dev;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+#operators {
+    background-color: tomato;
+    width: 100%;
+    display: inline;
+    float: top;
+    grid-area: op;
+    border-left: solid 2px black;
+}
+
+#edit-mode {
+    margin-bottom: 10px;
+    margin-left: 8px;
+}
+
+#settings {
+    margin-left: 8px;
+}
+
+#toggle-button {
+    display: block;
+    background-color: blueviolet;
+    color: white;
+    border: 5px solid lime;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+}
+
+.op-button {
+    cursor: pointer;
+}
+
+#single-particles {
+    background-color: turquoise;
+    border: solid 2px violet;
+    border-radius: 3px;
+}
+
+#point-button,
+#joint-button,
+#erase-button,
+#clear-all,
+#gravity-toggler,
+#drag-toggler {
+    color: yellow;
+    display: inline;
+    border-radius: 5px;
+    margin-right: 15px;
+    padding: 5px 10px;
+    font-family: cursive;
+}
+
+#clear-all {
+    background-color: grey;
+    display: block;
+    margin: 5px 0px;
+}
+
+#anchor-point {
+    font-size: medium;
+    font-weight: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+}
